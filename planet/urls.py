@@ -14,6 +14,8 @@ from planet.feeds import PostFeed, AuthorFeed, AuthorTagFeed, TagFeed
 from planet.settings import PLANET_CONFIG
 from planet.sitemaps import planet_sitemaps_dict
 from planet.views import FeedAddView, BlogListByUserView, BlogDeleteView
+from django.contrib import admin
+
 
 
 if PLANET_CONFIG["LOGIN_REQUIRED_FOR_ADDING_FEED"]:
@@ -54,6 +56,8 @@ urlpatterns = patterns('planet.views',
     url(r'^search/$', "search", name="planet_search"),
 
     url(r'^$', "index", name="planet_index"),
+    
+    url(r'^admin/', admin.site.urls),
 )
 
 # Feed's urls
