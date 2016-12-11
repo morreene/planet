@@ -1,4 +1,10 @@
 =============
+This is rework of GitHub project django-planet
+=============
+* works well, used as reference for RSSNews project
+
+
+=============
 django-planet
 =============
 

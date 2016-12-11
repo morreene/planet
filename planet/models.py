@@ -2,10 +2,8 @@
 
 """
     django-planet models
-
     Heavily based on Feedjack's [1] models by Gustavo Picón. Changes and addings
     inspired by Mark Pilgrim's Feedparser [2].
-
     [1] http://www.feedjack.org/
     [2] http://www.feedparser.org/
 """
@@ -397,4 +395,3 @@ class Enclosure(models.Model):
 
     def __str__(self):
         return "{} [{}] ({})".format(self.link, self.mime_type, self.post)
-
